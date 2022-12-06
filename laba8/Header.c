@@ -36,9 +36,9 @@ void erase(char **arr, int *size, int pos) {
 }
 
 void remove1(char **arr) {
-    int k=0;
+
     int i = 0;
-    int size = strLen(arr[k]);
+    int size = strLen(arr[i]);
     while ((*arr)[i] == ' ') {
         erase(arr, &size, i);
     }
@@ -61,7 +61,7 @@ void remove1(char **arr) {
         }
     }
 
-k++;
+
 }
 
 int findWord(char **arr2) {
