@@ -1,0 +1,3 @@
+C:/OAIP_2/laba8/cmake-build-debug/CMakeFiles/laba8.dir
+C:/OAIP_2/laba8/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/OAIP_2/laba8/cmake-build-debug/CMakeFiles/rebuild_cache.dir
