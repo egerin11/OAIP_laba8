@@ -1,5 +1,6 @@
 #include<stdlib.h>
 #include<stdio.h>
+
 int strLen(const char *arr) {
     int i = 0;
     while (arr[i] != '\0')
@@ -36,33 +37,33 @@ void erase(char **arr, int *size, int pos) {
 
 void remove1(char **arr) {
     int k=0;
-    while (arr) {
-        int size = strLen(arr[k]);
-        int i = 0;
-        while ((*arr)[i] == ' ') {
-            erase(arr, &size, i);
-        }
+    int i = 0;
+    int size = strLen(arr[k]);
+    while ((*arr)[i] == ' ') {
+        erase(arr, &size, i);
+    }
 
-        i = size - 1;
-        while ((*arr)[i] == ' ') {
-            erase(arr, &size, i);
-            i--;
-        }
+    i = size - 1;
+    while ((*arr)[i] == ' ') {
+        erase(arr, &size, i);
+        i--;
+    }
 
-        i = 1;
-        while (i < size) {
+    i = 1;
+    while (i < size) {
+        i++;
+
+        if ((*arr)[i] == ' ') {
             i++;
-
-            if ((*arr)[i] == ' ') {
-                i++;
-                while ((*arr)[i] == ' ') {
-                    erase(arr, &size, i);
-                }
+            while ((*arr)[i] == ' ') {
+                erase(arr, &size, i);
             }
         }
     }
-    k++;
+
+k++;
 }
+
 int findWord(char **arr2) {
 
     remove1(arr2);
@@ -90,6 +91,7 @@ int findWord(char **arr2) {
 }
 
 void merge(char ***arr, int **size, int left, int mid, int right) {
+
     int l = left, r = mid + 1;
     int len = right - left + 1;
     int *tempSize = (int *) calloc(len, sizeof(int));
@@ -129,15 +131,15 @@ void merge(char ***arr, int **size, int left, int mid, int right) {
 }
 
 void mergeSort(char ***arr, int **size, int left, int right) {
-
     if (left < right) {
-        int mid = ( right+left) / 2;
+        int mid = (right + left) / 2;
         mergeSort(arr, size, left, mid);
         mergeSort(arr, size, mid + 1, right);
         merge(arr, size, left, mid, right);
-       /* printf("\n");*/
+
     }
 }
+
 void printString(char *arr) {
     int i = 0;
     while (arr[i] != '\0') {
@@ -154,18 +156,18 @@ void freeMemory(char **arr2, int *size, int argc) {
     free(size);
     free(arr2);
 }
- char**  memory(int argc)
-{
+
+char **memory(int argc) {
     char **arr2 = (char **) calloc((argc - 1), sizeof(char *));
     return arr2;
 }
- int* memory1(int argc)
-{
+
+int *memory1(int argc) {
     int *size = (int *) calloc((argc - 1), sizeof(int));
     return size;
 }
-void fillAndCopyArrays(int argc,char **arr2,char **argv,int*size)
-{
+
+void fillAndCopyArrays(int argc, char **arr2, char **argv, int *size) {
     for (int i = 1; i < argc; i++) {
         strCopy(argv[i], &arr2[i - 1]);
         size[i - 1] = findWord(&argv[i]);
@@ -175,8 +177,8 @@ void fillAndCopyArrays(int argc,char **arr2,char **argv,int*size)
 
 }
 
-void print(int argc, char **arr2)
-{
+void print(int argc, char **arr2) {
+
     for (int i = 0; i < argc - 1; i++) {
         printString(arr2[i]);
 
