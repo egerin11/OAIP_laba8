@@ -35,31 +35,34 @@ void erase(char **arr, int *size, int pos) {
 }
 
 void remove1(char **arr) {
-    int i = 0;
-    int size = strLen(arr[i]);
-    while ((*arr)[i] == ' ') {
-        erase(arr, &size, i);
-    }
+    int k=0;
+    while (arr) {
+        int size = strLen(arr[k]);
+        int i = 0;
+        while ((*arr)[i] == ' ') {
+            erase(arr, &size, i);
+        }
 
-    i = size - 1;
-    while ((*arr)[i] == ' ') {
-        erase(arr, &size, i);
-        i--;
-    }
+        i = size - 1;
+        while ((*arr)[i] == ' ') {
+            erase(arr, &size, i);
+            i--;
+        }
 
-    i = 1;
-    while (i < size) {
-        i++;
-
-        if ((*arr)[i] == ' ') {
+        i = 1;
+        while (i < size) {
             i++;
-            while ((*arr)[i] == ' ') {
-                erase(arr, &size, i);
+
+            if ((*arr)[i] == ' ') {
+                i++;
+                while ((*arr)[i] == ' ') {
+                    erase(arr, &size, i);
+                }
             }
         }
     }
+    k++;
 }
-
 int findWord(char **arr2) {
 
     remove1(arr2);
