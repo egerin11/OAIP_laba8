@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/OAIP_2/laba8/cmake-build-debug",
-		"source" : "C:/OAIP_2/laba8"
+		"build" : "C:/OAIP_laba8/laba8/cmake-build-debug",
+		"source" : "C:/OAIP_laba8/laba8"
 	},
 	"version" : 
 	{

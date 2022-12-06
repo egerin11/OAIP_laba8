@@ -41,7 +41,7 @@ void remove1(char **arr) {
         erase(arr, &size, i);
     }
 
-    i = size - 1;
+    i = size - 2;
     while ((*arr)[i] == ' ') {
         erase(arr, &size, i);
         i--;

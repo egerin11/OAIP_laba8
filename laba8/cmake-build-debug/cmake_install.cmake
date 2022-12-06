@@ -1,4 +1,4 @@
-# Install script for directory: C:/OAIP_2/laba8
+# Install script for directory: C:/OAIP_laba8/laba8
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/OAIP_2/laba8/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/OAIP_laba8/laba8/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

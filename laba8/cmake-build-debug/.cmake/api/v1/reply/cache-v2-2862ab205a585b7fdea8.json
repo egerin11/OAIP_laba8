@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/OAIP_2/laba8/cmake-build-debug"
+			"value" : "c:/OAIP_laba8/laba8/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -431,7 +431,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/OAIP_2/laba8/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/OAIP_laba8/laba8/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -503,7 +503,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/OAIP_2/laba8"
+			"value" : "C:/OAIP_laba8/laba8"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1131,7 +1131,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/OAIP_2/laba8/cmake-build-debug"
+			"value" : "C:/OAIP_laba8/laba8/cmake-build-debug"
 		},
 		{
 			"name" : "laba8_IS_TOP_LEVEL",
@@ -1155,7 +1155,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/OAIP_2/laba8"
+			"value" : "C:/OAIP_laba8/laba8"
 		}
 	],
 	"kind" : "cache",
