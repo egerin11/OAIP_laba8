@@ -12,6 +12,6 @@ void printString(char* arr);
 void freeMemory(char **arr2,int *size,int argc);
 char** memory(int argc);
  int* memory1(int argc);
-void fillAndCopyArrays(int argc,char **arr2,char **argv,int*size);
+void fillAndCopyArrays(int argc,char **arr2,char **argv,int **size);
 void print(int argc,char**arr2);
 #endif

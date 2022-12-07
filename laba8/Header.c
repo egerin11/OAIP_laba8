@@ -37,8 +37,8 @@ void erase(char **arr, int *size, int pos) {
 
 void remove1(char **arr) {
 
-    int i = 0;
-    int size = strLen(arr[i]);
+    int i = 0; //,k=0;
+    int size = strLen(*arr);
     while ((*arr)[i] == ' ') {
         erase(arr, &size, i);
     }
@@ -167,18 +167,18 @@ int *memory1(int argc) {
     return size;
 }
 
-void fillAndCopyArrays(int argc, char **arr2, char **argv, int *size) {
+void fillAndCopyArrays(int argc, char **arr2, char **argv, int **size) {
     for (int i = 1; i < argc; i++) {
         strCopy(argv[i], &arr2[i - 1]);
-        size[i - 1] = findWord(&argv[i]);
-        printf("%d\n%s\n", size[i - 1], argv[i]);
+        (*size)[i - 1] = findWord(&arr2[i-1]);
+        printf("%d\n%s\n", (*size)[i - 1], arr2[i-1]);
     }
     printf("\n\n");
 
 }
 
 void print(int argc, char **arr2) {
-
+   
     for (int i = 0; i < argc - 1; i++) {
         printString(arr2[i]);
 

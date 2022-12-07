@@ -8,7 +8,7 @@ void task(int argc, char **argv) {
     }
     char **arr2 = memory(argc);
     int *size = memory1(argc);
-    fillAndCopyArrays(argc, arr2, argv, size);
+    fillAndCopyArrays(argc, arr2, argv, &size);
     mergeSort(&arr2, &size, 0, argc - 2);
     print(argc, arr2);
     freeMemory(arr2, size, argc);
